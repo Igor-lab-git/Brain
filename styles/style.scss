@@ -1,7 +1,11 @@
-@use "./base/normalize";
-@use "./base/fonts";
-@use "./base/variables";
-@use "./base/utils";
-@use "./base/globals";
+@use "base/normalize";
+@use "base/fonts";
+@use "base/variables";
+@use "base/utils";
+@use "base/globals";
 
+@use "blocks/header";
+@use "blocks/logo";
+@use "blocks/botton";
+@use "blocks//button-search";
 

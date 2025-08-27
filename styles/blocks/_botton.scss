@@ -1,0 +1,12 @@
+@use "../base/helpers/" as *;
+
+.botton {
+  padding: 8px 16px;
+  color: var(--color-light);
+  background-color: var(--color-blue-button);
+
+  @include hover {
+    color: var(--color-light);
+    opacity: 0.8;
+  }
+}
