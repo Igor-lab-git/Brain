@@ -1,0 +1,10 @@
+@use "helpers" as *;
+
+body {
+  @include fluid-text(16, 14);
+
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
