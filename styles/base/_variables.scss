@@ -13,6 +13,8 @@
   --color-dark-40: rgba(var(--color-dark-rgb), 0.4);
   --color-dark-20: rgba(var(--color-dark-rgb), 0.2);
   --color-dark-12: rgba(var(--color-dark-rgb), 0.12);
+  --color-dark-8: rgba(var(--color-dark-rgb), 0.08);
+  --color-dark-2: rgba(var(--color-dark-rgb), 0.02);
 
   --border-radius: 50px;
 
@@ -22,8 +24,7 @@
   --container--width: #{rem(1170)};
   --container-padding-x: #{rem(15)};
 
-  // --container--width: 1170px;
-  // --container-padding-x: 15px;
+  --input-height: #{rem(48)};
 
   --transition-duration: 0.2s;
 }

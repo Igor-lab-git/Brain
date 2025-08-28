@@ -1,0 +1,53 @@
+@use "../base/helpers/" as *;
+
+.hero {
+  @include flex-center;
+
+  justify-content: space-between;
+  column-gap: rem(15);
+
+  @include mobile {
+    flex-direction: column;
+    align-items: normal;
+    max-width: rem(464);
+    row-gap: rem(20);
+  }
+
+  &__body {
+    max-width: rem(464);
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(40);
+
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__title {
+    @include mobile {
+        order: -2;
+    }
+  }
+
+  &__description {
+    line-height: 1.24;
+    color: var(--color-dark-80);
+  }
+
+  &__image-bg {
+    width: rem(392);
+    height: rem(304);
+
+    @include tablet {
+      max-width: 40%;
+      height: auto;
+    }
+
+    @include mobile {
+        order: -1;
+        max-width: 100%;
+        width: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use "../base/helpers/" as *;
+
+.section {
+  padding-block: rem(80) rem(120);
+
+  @include mobile {
+    padding-block: rem(45) rem(60);
+  }
+
+  &__body {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

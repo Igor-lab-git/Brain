@@ -7,14 +7,14 @@
   @include square(var(--size));
 
   &__search {
+    position: relative;
+    border: 2px solid var(--color-dark-40);
+    border-radius: var(--border-radius);
+
     @include square(16px);
     @include hover {
       border-color: var(--color-dark-80);
     }
-
-    position: relative;
-    border: 2px solid var(--color-dark-40);
-    border-radius: var(--border-radius);
 
     &::after {
       position: absolute;
@@ -37,11 +37,10 @@
 
   &__sign-in-button {
     --size-sign-in: #{rem(24)};
+    position: relative;
 
     @include flex-center;
     @include square(var(--size-sign-in));
-
-    position: relative;
 
     &::after {
       content: "";
@@ -64,6 +63,13 @@
       border-radius: 50%;
       top: 3px;
       left: 6px;
+    }
+
+    @include hover {
+      &::after,
+      &::before {
+        border-color: var(--color-dark-80);
+      }
     }
   }
 }
