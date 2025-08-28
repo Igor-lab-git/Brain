@@ -18,10 +18,17 @@ html {
 body {
   @include fluid-text(16, 14);
 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--font-family-base);
   line-height: 1.5;
   color: var(--color-dark);
   background-color: var(--color-light);
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
@@ -119,4 +126,18 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+a,
+button {
+  &[aria-label] {
+    position: relative;
+
+    &::before {
+      @include abs-center;
+      @include square(rem(44));
+
+      content: "";
+    }
+  }
 }

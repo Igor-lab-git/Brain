@@ -1,0 +1,45 @@
+@use "../base/helpers/" as *;
+
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  padding-block: rem(16);
+  border-bottom: rem(1) solid var(--color-dark-12);
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: rem(100) rem(200);
+
+  @keyframes scrolling-header {
+    to {
+      box-shadow: 0 0 1rem var(--color-dark);
+    }
+  }
+
+  @include mobile {
+    padding-block: rem(12);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__overlay-links {
+    display: flex;
+    align-items: center;
+    column-gap: rem(96);
+  }
+
+  &__sign-in-button {
+    @include flex-center(true);
+    @include fluid-text(14, 14);
+
+    align-items: center;
+    column-gap: rem(8);
+    line-height: 1.24;
+    color: var(--color-dark);
+  }
+}

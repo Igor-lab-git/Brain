@@ -1,12 +1,23 @@
 @use "../base/helpers/" as *;
 
 .botton {
-  padding: 8px 16px;
-  color: var(--color-light);
-  background-color: var(--color-blue-button);
+  padding: rem(8) rem(16);
+  color: var(--color-dark);
+  line-height: 1.24;
+  background-color: var(--color-gra-bg);
 
   @include hover {
+    background-color: var(--color-dark-60);
+  }
+
+  &--link-blue {
     color: var(--color-light);
-    opacity: 0.8;
+    background-color: var(--color-blue-button);
+
+    @include hover {
+      color: var(--color-light);
+      background-color: var(--color-blue-button);
+      opacity: 0.8;
+    }
   }
 }

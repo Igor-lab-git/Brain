@@ -1,3 +1,10 @@
-// .logo {
-//     color: red;
-// }
+@use "../base/helpers/" as *;
+
+.logo {
+  &__icon {
+    @include mobile {
+      width: 80px;
+      height: auto;
+    }
+  }
+}
