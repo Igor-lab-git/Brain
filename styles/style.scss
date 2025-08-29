@@ -4,12 +4,15 @@
 @use "base/utils";
 @use "base/globals";
 
+@use "blocks/grid";
 @use "blocks/header";
 @use "blocks/logo";
-@use "blocks/botton";
+@use "blocks/button";
 @use "blocks/button-icon";
 @use "blocks/burger-button";
 @use "blocks/section";
 @use "blocks/hero";
 @use "blocks/search-form";
+@use "blocks/ads-feed";
+@use "blocks/ads-feed-card";
 

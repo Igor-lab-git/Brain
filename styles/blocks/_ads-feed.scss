@@ -1,0 +1,27 @@
+@use "../base/helpers/" as *;
+
+.ads-feed {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(40);
+
+  &__button-load-more {
+    display: flex;
+    align-items: center;
+    column-gap: rem(8);
+    align-self: center;
+    padding: rem(12) rem(48);
+    border: 1px solid var(--color-dark);
+
+    @include hover {
+      color: var(--color-blue-button);
+      border-color: var(--color-blue-button);
+
+      & svg {
+        path {
+          stroke: var(--color-blue-button);
+        }
+      }
+    }
+  }
+}

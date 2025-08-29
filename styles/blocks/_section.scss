@@ -3,6 +3,11 @@
 .section {
   padding-block: rem(80) rem(120);
 
+  &--padding-bg {
+    padding-block: rem(40) rem(160);
+    background-color: var(--color-gra-bg);
+  }
+
   @include mobile {
     padding-block: rem(45) rem(60);
   }
@@ -13,4 +18,27 @@
       justify-content: center;
     }
   }
+
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: rem(32);
+    }
+  }
+
+  &__header-menu-categories {
+    &:not(:last-child) {
+      margin-bottom: rem(80);
+    }
+  }
+
+  &__header-menu-categories-list {
+    display: flex;
+    align-items: center;
+    column-gap: rem(16);
+  }
+
+  &__header-title {
+    line-height: 1.32;
+  }
+
 }

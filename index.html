@@ -28,7 +28,7 @@
             </button>
     
             <div class="header__overlay-links is-active hidden-mobile">
-                <a class="header__post-link botton botton--link-blue" href="#">Разместить объявление</a>
+                <a class="header__post-link button button--link-blue" href="#">Разместить объявление</a>
                 <button class="header__sign-in-button btn-reset" type="button">
                     <div class="button-icon button-icon__sign-in-button">
                     </div>
@@ -75,41 +75,329 @@
             </div>
         </section>
 
-        <section class="section container">
+        <section class="section section--padding-bg">
 
-            <header class="section__header">
-                <nav class="section__menu-categories">
-                    <ul class="section__menu-categories-list">
-                        <li class="section__menu-categories-item is-active">
-                            <button class="botton">Вся доска</button>
+            <div class="section__inner container">
+
+                <header class="section__header">
+                    <nav class="section__header-menu-categories">
+                        <ul class="section__header-menu-categories-list list-reset">
+                            <li class="section__header-menu-categories-item is-active">
+                                <button class="section__header-menu-categories-button button ">Вся доска</button>
+                            </li>
+    
+                            <li class="section__header-menu-categories-item">
+                                <button class="button">Бытовая техника</button>
+                            </li>
+    
+                            <li class="section__header-menu-categories-item">
+                                <button class="button">Одежда</button>
+                            </li>
+    
+                            <li class="section__header-menu-categories-item">
+                                <button class="button">Автомобили</button>
+                            </li>
+    
+                            <li class="section__header-menu-categories-item">
+                                <button class="button">Телефоны</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h2 class="section__header-title">Вся лента</h2>
+                </header>
+    
+                <div class="ads-feed">
+                    <ul class="ads-feed__list list-reset grid grid--3">
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-1.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue " type="button">Техника</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">Стиральная машинка Bosch</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+                                    <data class="ads-feed-card__price" value="1000">1000 Р</data>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
                         </li>
-
-                        <li class="section__menu-categories-item">
-                            <button class="botton">Бытовая техника</button>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Одежда</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">Шапочка</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
                         </li>
-
-                        <li class="section__menu-categories-item">
-                            <button class="botton">Одежда</button>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Одежда</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">Шапочка</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
                         </li>
-
-                        <li class="section__menu-categories-item">
-                            <button class="botton">Автомобили</button>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Статьи</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">Дайджест IT-вакансий за март 2021</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Актуальные вакансии Intern и Junior IT-разработчикам в Нижнем Новгороде. Предложения работы от партнёров платформы подготовки и трудоустройства IT-специалистов HiBrain.</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
                         </li>
-
-                        <li class="section__menu-categories-item">
-                            <button class="botton">Телефоны</button>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Статьи</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">С Новым 2021 годом!</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
+                        </li>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Статьи</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">С Новым 2021 годом!</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
+                        </li>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-1.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Техника</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">Дайджест IT-вакансий за март 2021</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>УАктуальные вакансии Intern и Junior IT-разработчикам в Нижнем Новгороде. Предложения работы от партнёров платформы подготовки и трудоустройства IT-специалистов HiBrain.</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
+                        </li>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Статьи</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">С Новым 2021 годом!</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
+                        </li>
+    
+                        <li class="ads-feed__item">
+                            <article class="ads-feed-card">
+                                <div class="ads-feed-card__wrapper-image">
+                                    <img class="ads-feed-card__image" src="./images/images/ads-feed/image-2.webp" alt="Изображение товара" width="363" height="200" loading="lazy">
+                                    <button class="ads-feed-card__button button button--link-blue btn-reset" type="button">Статьи</button>
+                                </div>
+    
+                                <div class="ads-feed-card__body">
+                                    <h3 class="ads-feed-card__title">
+                                        <a class="ads-feed-card__title-link" href="#">С Новым 2021 годом!</a>
+                                    </h3>
+                                    <div class="ads-feed-card__description">
+                                        <p>Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                    </div>
+    
+                                    <footer class="ads-feed-card__footer">
+                                        <time class="ads-feed-card__date" datetime="2021-04-14">14 апреля 2021</time>
+                                        <div class="ads-feed-card__wrapper-views">
+                                            <svg class="ads-feed-card__eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g opacity="0.4">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg> 
+                                            <span class="ads-feed-card__views-count">356</span>                                           
+                                        </div>
+                                    </footer>
+                                </div>
+                            </article>
                         </li>
                     </ul>
-                </nav>
-                <h2>Вся лента</h2>
-            </header>
-
-            <div class="section__inner">
-                <ul>
-                    <li>
-                        <article></article>
-                    </li>
-                </ul>
+                    <button class="ads-feed__button-load-more button btn-reset" type="button" aria-label="Загрузить еще товаров">
+                        <svg class="ads-feed__button-load-more-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3333 0.666748L14 3.33341L11.3333 6.00008" stroke="#2A2F37" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 7.33325V5.99992C2 5.29267 2.28095 4.6144 2.78105 4.1143C3.28115 3.6142 3.95942 3.33325 4.66667 3.33325H14" stroke="#2A2F37" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.66667 15.3333L2 12.6667L4.66667 10" stroke="#2A2F37" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 8.66675V10.0001C14 10.7073 13.719 11.3856 13.219 11.8857C12.7189 12.3858 12.0406 12.6667 11.3333 12.6667H2" stroke="#2A2F37" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                        Загрузить еще
+                    </button>
+                </div>
             </div>
         </section>
        

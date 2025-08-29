@@ -1,0 +1,41 @@
+@use "../base/helpers/" as *;
+
+.ads-feed-card {
+  position: relative;
+  background-color: var(--color-light);
+
+  &__button {
+    top: rem(149);
+    left: rem(16);
+    position: absolute;
+  }
+
+  &__body {
+    padding: rem(24);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__title {
+    line-height: rem(24);
+  }
+
+  &__title-link {
+    color: var(--color-dark);
+
+    @include hover {
+      color: var(--color-blue-button);
+    }
+  }
+
+  &__price {
+    align-self: flex-end;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

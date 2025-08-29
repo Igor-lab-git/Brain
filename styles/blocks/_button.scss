@@ -1,13 +1,21 @@
 @use "../base/helpers/" as *;
 
-.botton {
+.button {
+  @include fluid-text(16, 16);
+
   padding: rem(8) rem(16);
-  color: var(--color-dark);
+  font-weight: 400;
   line-height: 1.24;
+  color: var(--color-dark);
   background-color: var(--color-gra-bg);
 
   @include hover {
-    background-color: var(--color-dark-60);
+    background-color: var(--color-dark-20);
+  }
+
+  &:active {
+    color: var(--color-light);
+    background-color: var(--color-blue-button);
   }
 
   &--link-blue {
